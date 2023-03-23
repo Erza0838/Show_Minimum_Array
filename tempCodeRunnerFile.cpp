@@ -1,0 +1,1 @@
+inputNumbers[5] = {}
