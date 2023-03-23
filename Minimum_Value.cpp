@@ -45,11 +45,10 @@ void Input()
 
     if(size_t(inputNumbers) > 0)
     {
-        cout << "Array tidak kosong" << endl;
         for(int compareValue = 0; compareValue < size_t(inputNumbers); compareValue++)
-        {
-            if(inputNumbers[compareValue] + 1 < compareValue || inputNumbers[compareValue] * 1 < compareValue)
-            {
+        {   
+            if(inputNumbers[compareValue] + 1 < inputNumbers[0] || inputNumbers[compareValue] * 1 < inputNumbers[0])
+            {   
                 cout << "Nilai minimumnya adalah : " << inputNumbers[compareValue] << endl;
                 break;
             }
@@ -58,26 +57,11 @@ void Input()
 }
 // Baris akhir function 
 
-// Function menampilkan nilai paling kecil
-// int MinimumInputValue(int arrayValue)
-// {
-//     for(int compareValue = 0; compareValue < arrayValue; compareValue++)
-//     {
-//         if(arrayValue[compareValue] + 1 < arrayValue[compareValue] || arrayValue[compareValue] * 1 < arrayValue[compareValue])
-//         {
-//             return arrayValue[compareValue];
-//         }
-//     }
-// }
-// Baris akhir function
-
 int main()
 {   
     // Function untuk memasukkan input
     Input();
     // Baris akhir function 
 
-    // Menampilkan nilai paling kecil
-    // cout << "Nilai minimumnya adalah : " << MinimumInputValue(inputNumbers) << endl;
     return 0;
 }
